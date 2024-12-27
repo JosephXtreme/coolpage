@@ -1,0 +1,149 @@
+header {
+  background-color: rgb(36, 13, 58);
+  color: orange;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: space-between;
+}
+.sections {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.gridproduct {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+.product {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+.product h2 {
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+}
+
+.rating {
+  color: #888;
+}
+
+.price {
+  color: #f50;
+  font-size: 1.4em;
+}
+
+.product button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
+
+.product button:hover {
+  background-color: #00af69;
+}
+
+.show-more {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .gridproduct {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+  }
+}
+@media (max-width: 800px) {
+  .gridproduct {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+  }
+}
+.home {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 12px;
+  gap: 12px;
+  border: 0px;
+  background-color: rgb(195, 195, 195);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+.home:active {
+  box-shadow: 0px 0px 20px black;
+}
+.home h4 {
+  margin: 0px;
+  letter-spacing: 2px;
+}
+.action {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.withdrow {
+  display: flex;
+  align-items: center;
+  range: 50px;
+  padding-right: 50px;
+  gap: 10px;
+}
+.withdrow select {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(195, 195, 195);
+}
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.buy {
+  display: flex;
+  justify-content: space-between;
+  range: 20px;
+}
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.discount p {
+  background-color: rgb(158, 189, 218);
+  color: #007bff;
+  padding: 5px;
+  border-radius: 8px;
+}
+.infos {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  gap: 20px;
+}
+.infos p {
+  color: #f50;
+}

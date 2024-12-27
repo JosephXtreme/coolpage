@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top, #e0f7fa, #80d8ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 20px;
+}
+.grid-calculator {
+  display: grid;
+  grid-template-areas:
+    "7 8 9 *"
+    "4 5 6 -"
+    "1 2 3 +"
+    "% 0 , = ";
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: aliceblue;
+}
+
+.egale {
+  background-color: purp;
+  color: aliceblue;
+}
+span {
+  background-color: #80d8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px black solid;
+}
